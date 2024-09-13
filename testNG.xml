@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de pruebas" thread-count="1" parallel="tests">
+
+    <test name="Test Get  Object with id 5 and statusCode 200">
+        <parameter name="id" value="/2"> </parameter>
+        <parameter name="ExpecteStatusCode" value="200"> </parameter>
+        <classes>
+            <class name="TestApis.GetSingleObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test Get  Object with id 50 and statusCode 404">
+        <parameter name="id" value="/50"> </parameter>
+        <parameter name="ExpecteStatusCode" value="404"> </parameter>
+        <classes>
+            <class name="TestApis.GetSingleObject"> </class>
+        </classes>
+    </test>
+
+
+
+
+    <!--
+
+       <test name="Test GetSingleObject">
+           <classes>
+               <class name="TestApis.GetSingleObject"> </class>
+           </classes>
+       </test>
+
+       <test name="Test Get Objects">
+           <classes>
+               <class name="TestApis.GetObjects"> </class>
+           </classes>
+       </test>
+
+       <test name="Test Create Objects">
+           <classes>
+               <class name="TestApis.CreateObject"> </class>
+           </classes>
+       </test>
+       -->
+
+
+   </suite>
