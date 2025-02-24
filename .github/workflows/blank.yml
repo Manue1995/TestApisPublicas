@@ -14,6 +14,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'  # Puedes especificar la versión de Java que necesites
+        distribution: 'adopt'
 
     - name: Run .jar file
       run: java -jar  /target/Carpeta-1.0-SNAPSHOT.jar
