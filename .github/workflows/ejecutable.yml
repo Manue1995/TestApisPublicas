@@ -17,4 +17,4 @@ jobs:
         distribution: 'adopt'
 
     - name: Run .jar file
-      run: java -jar  Carpeta-1.0-SNAPSHOT.jar
+      run: java -jar Carpeta-1.0-SNAPSHOT.jar
